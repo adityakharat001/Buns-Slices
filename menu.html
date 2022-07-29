@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <script
+      src="https://kit.fontawesome.com/c4e5909750.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <nav>
+        <p class="brand">Buns&Slices</p>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a class="active" href="#">Menu</a></li>
+          <li><a href="./reservation.html">Reservation</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div id="main-content-menu">
+        <h1 class="ani-text">Menu</h1>
+        <div>
+          <ul class="menu-list">
+            <li>
+              <a href="./menu-pages/burgers.html" target="menuFrame">Burgers</a>
+            </li>
+            <li>
+              <a href="./menu-pages/pizza.html" target="menuFrame">Pizza</a>
+            </li>
+            <li>
+              <a href="./menu-pages/sides.html" target="menuFrame">Sides</a>
+            </li>
+            <li>
+              <a href="./menu-pages/drinks.html" target="menuFrame">Drinks</a>
+            </li>
+            <li>
+              <a href="./menu-pages/desert.html" target="menuFrame">Desert</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu-section">
+          <iframe
+            name="menuFrame"
+            class="menu-frame"
+            src="./menu-pages/burgers.html"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <footer>
+        <div class="foot-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a></i>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="foot-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            quae nostrum explicabo sit corrupti! Pariatur?
+          </p>
+          <p>+91 9594939291</p>
+        </div>
+      </footer>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

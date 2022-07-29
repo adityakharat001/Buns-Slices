@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <script
+      src="https://kit.fontawesome.com/c4e5909750.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <nav>
+        <p class="brand">Buns&Slices</p>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a class="active" href="#">Reservation</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div id="main-content-contact">
+        <img src="./images/pages/reserve/bg.jpg" alt="" />
+        <div class="shade2"></div>
+        <div id="contact-text" >
+          <h1 class="ani-text">Book A Table</h1>
+          <p>and skip the queue!</p>
+        </div>
+        <form id="reserve-form" onsubmit="return validateForm()" novalidate>
+          <table>
+            <tr>
+              <td><h2>Name</h2></td>
+              <td>
+                <input
+                  type="text"
+                  name=""
+                  id="nameReserve"
+                  placeholder="Enter Your Name" 
+                  onblur="validate1()"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div id="errName"></div></td>
+            </tr>
+            <tr>
+              <td><h2>Date</h2></td>
+              <td>
+                <input
+                  type="text"
+                  name=""
+                  id="dateReserve"
+                  placeholder="Select a Date" onfocus="(this.type = 'date')"
+                  onblur="validate2()"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div id="errDate"></div></td>
+            </tr>
+            <tr>
+              <td><h2>Time</h2></td>
+              <td>
+                <input
+                  type="text"
+                  name=""
+                  id="timeReserve"
+                  placeholder="Select Time" onfocus="(this.type = 'time')"  
+                  onblur="validate3()"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div id="errTime"></div></td>
+            </tr>
+          </table>
+          <br />
+          <button class="bookTable" type="submit">Book Table</button>
+        </form>
+      </div>
+      <footer>
+        <div class="foot-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a></i>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="foot-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            quae nostrum explicabo sit corrupti! Pariatur?
+          </p>
+          <p>+91 9594939291</p>
+        </div>
+      </footer>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
